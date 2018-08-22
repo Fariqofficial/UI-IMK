@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">UI_IMK</string>
+    <string name="doctor">DOCTOR</string>
+    <string name="patient">PATIENT</string>
+    <string name="room">ROOM</string>
+    <string name="medicine">MEDICINE</string>
+    <string name="pilih_menu">- Silahkan pilih menu dibawah -</string>
+    <string name="DoB">Pilih tanggal</string>
+    <string name="laki_laki">Laki - laki</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="data_doctor">- Data dokter -</string>
+    <string name="data_patient">- Data pasien -</string>
+    <string name="data_ruangan">- Data ruangan -</string>
+    <string name="data_obat">- Data obat -</string>
+    <string name="nama_doctor">Masukkan nama lengkap</string>
+    <string name="alamat_doctor">Masukkan alamat lengkap</string>
+    <string name="hp_doctor">Masukkan nomor hp</string>
+    <string name="nama_ruangan">Masukkan nama ruangan</string>
+    <string name="no_ruangan">Masukkan no ruangan</string>
+    <string name="lt_ruangan">Masukkan lantai ruangan</string>
+    <string name="kd_obat">Masukkan kode obat</string>
+    <string name="nama_obat">Masukkan nama obat</string>
+    <string name="jumlah_obat">Jumlah Obat</string>
+    <string name="jenis_obat">Jenis Obat</string>
+    <string name="harga_obat">Masukkan harga obat</string>
+    <string name="footer">© 2018 FariqOfficial_</string>
+    <string-array name="dropdown_list">
+        <item>Pilih Agama</item>
+        <item>Islam</item>
+        <item>Katolik</item>
+        <item>Protestan</item>
+        <item>Budha</item>
+        <item>Hindu</item>
+        <item>Budha</item>
+        <item>Kong Hu Chu</item>
+    </string-array>
+    <string-array name="jenis_ruangan">
+        <item>Pilih Kelas Ruangan</item>
+        <item>Kelas 1</item>
+        <item>Kelas 2</item>
+        <item>Kelas 3</item>
+        <item>VIP</item>
+    </string-array>
+    <string-array name="status_ruangan">
+        <item>Pilih Status Ruangan</item>
+        <item>Tersedia</item>
+        <item>Penuh</item>
+    </string-array>
+    <string-array name="jenis_obat">
+        <item>Pilih Jenis Obat</item>
+        <item>Tablet</item>
+        <item>Pil</item>
+        <item>Kapsul</item>
+        <item>Sirup</item>
+    </string-array>
+</resources>

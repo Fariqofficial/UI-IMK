@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".patient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/pasien" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/backgroundcolor"
+                android:gravity="center"
+                android:paddingTop="17dp"
+                android:text="@string/data_patient"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:adjustViewBounds="true"
+                            android:paddingTop="15dp"
+                            android:src="@drawable/users" />
+                    </FrameLayout>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/nama_doctor"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:paddingTop="25dp"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:adjustViewBounds="true"
+                            android:paddingTop="15dp"
+                            android:src="@drawable/genders" />
+                    </FrameLayout>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/laki"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/laki_laki"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"/>
+                        <RadioButton
+                            android:id="@+id/perempuan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/perempuan"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"/>
+                    </RadioGroup>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:adjustViewBounds="true"
+                            android:paddingTop="15dp"
+                            android:src="@drawable/religi"/>
+                    </FrameLayout>
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dp"
+                        android:padding="5dp"
+                        android:entries="@array/dropdown_list">
+                    </Spinner>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:adjustViewBounds="true"
+                            android:paddingTop="15dp"
+                            android:src="@drawable/map" />
+                    </FrameLayout>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/alamat_doctor"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:paddingTop="25dp"
+                        android:textSize="20sp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:adjustViewBounds="true"
+                            android:paddingTop="15dp"
+                            android:src="@drawable/calendar" />
+                    </FrameLayout>
+
+                    <Button
+                        android:id="@+id/dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/DoB">
+                    </Button>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:adjustViewBounds="true"
+                            android:paddingTop="15dp"
+                            android:src="@drawable/hp" />
+                    </FrameLayout>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hp_doctor"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:paddingTop="25dp"
+                        android:textSize="20sp" />
+                </TableRow>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="20dp">
+                    <TableRow
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+                        <ImageView
+                            android:paddingLeft="9dp"
+                            android:paddingRight="20dp"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:src="@drawable/add"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/add"/>
+                        <ImageView
+                            android:paddingLeft="9dp"
+                            android:paddingRight="20dp"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:src="@drawable/save"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/save"/>
+                        <ImageView
+                            android:paddingLeft="9dp"
+                            android:paddingRight="20dp"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:src="@drawable/edit"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/edit"/>
+                        <ImageView
+                            android:paddingRight="20dp"
+                            android:paddingLeft="9dp"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:src="@drawable/delete"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/delete"/>
+                    </TableRow>
+                </RelativeLayout>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

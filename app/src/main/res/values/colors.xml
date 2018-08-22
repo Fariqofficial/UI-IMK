@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#dd3333</color>
+    <color name="Flower">#FFCE54</color>
+    <color name="lightsteelblue">#B0C4DE</color>
+    <color name="Orange">#F68B42</color>
+    <color name="Mint">#48CFAD</color>
+    <color name="BitterSweet">#FC6E51</color>
+    <color name="backgroundcolor">#fcfcfc</color>
+</resources>
